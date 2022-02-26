@@ -1,0 +1,122 @@
+@charset "utf-8";
+*{
+    box-sizing: border-box;
+}
+body{ 
+    background-image: url(./design/teglafal.jpg);
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+}
+header,nav,aside,article,footer, main{
+    padding: 5px;
+}
+main{
+    -webkit-box-shadow: 0px 0px 9px 10px rgba(247,247,247,0.67); 
+    box-shadow: 0px 0px 9px 10px rgba(247,247,247,0.67);
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-areas:
+    "h h"
+    "ar n"
+    "f f";
+	
+	margin:auto;
+    max-width: 800px;
+    width: 80%;
+}
+header{
+    grid-area:h;
+    background-image: url(./design/beer-new_401732638.jpg);
+    background-size: cover;
+    height: 500px;
+}
+nav{grid-area: n; background-color: #333333;}
+article{grid-area:ar ; background-color: black;}
+footer{grid-area: f; text-align: center;}
+
+nav a {
+    padding: 1px 20px;
+    color: red;
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+    border: solid 1px white;
+    border-radius: 5px;
+}
+nav ul {
+    padding-left: 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2px;
+	list-style-type: none;
+}
+h1{
+padding-left: 5px;
+}
+table, th, td{
+    border: 1px solid white;
+    text-align: center;
+    border-collapse: collapse;
+    padding: 0px 10px;
+    font-size: small;
+    padding: 0px 3px;
+}
+tr:nth-child(even){
+    background-color: gray;
+}
+.kepek{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.kepek img{
+    width: 100%;
+}
+#Hírlevél{
+     display: grid;
+    grid-template-columns: 100px 200px;
+}
+@media screen and (max-width: 600px){ /*600px alatt milyen legyen a kinézet.*/
+	main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "h"
+        "n"
+        "ar"
+        "f";
+    }
+    a{ text-align: center;}
+    header{
+        background: black;
+        height: 100px;
+        text-align: center;
+    }
+    .kepek{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+	
+	
+}  
+@media screen and (max-width: 400px){ /*400px alatt milyen legyen a kinézet.*/
+	main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "h"
+        "n"
+        "ar"
+        "f";
+    }
+	a{ text-align: center;}
+    header{
+        background: black;
+        height: 100px;
+        text-align: center;
+    }
+    .kepek{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+	
+}

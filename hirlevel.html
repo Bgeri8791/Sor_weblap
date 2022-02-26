@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+	<meta name="description" content="xy">
+	<meta name="keywords" content="xy,xy,xy">
+	<meta name="author" content="Buzási Gergő">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Buzási Gergő</title>
+</head>
+<body>
+<main>
+    <header><h1>Ha kell egy jó sör...</h1></header>
+    <nav><ul>
+        <li><a href="index.html">Sörök fajtái</a></li>
+        <li><a href="tablazat.html">Táblázat</a></li>
+        <li><a href="#">Hírlevél</a></li>
+    </ul></nav>
+    <article>
+        <form>
+            <fieldset id="Hírlevél">
+            <legend>Hírlevél felíratkozás</legend>
+            <label for="vname">Vezetéknév:</label>
+            <input type="text" id="vname" name="vname" placeholder="Vezetéknév">
+            
+            <label for="kname">Keresztnév:</label>
+            <input type="text" id="kname" name="kname" placeholder="Keresztnév">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email">
+        </fieldset>
+        <fieldset>
+            <legend>Szereti a sört?</legend>
+            <input type="radio" id="Igen" name="fav_language" value="Igen">
+            <label for="Igen">Igen</label><br>
+
+            <input type="radio" id="Nem" name="fav_language" value="Nem">
+            <label for="Nem">Nem</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Melyik a kedvenc márkája?</legend>
+            <input type="checkbox" id="Soproni" name="fav_language" value="Soproni">
+            <label for="Soproni">Soproni</label><br>
+
+            <input type="checkbox" id="Heinecken" name="fav_language" value="Heinecken">
+            <label for="Heinecken">Heinecken</label><br>
+
+            <input type="checkbox" id="Egyéb" name="fav_language" value="Egyéb">
+            <label for="Egyéb">Egyéb</label><br>
+        </fieldset>
+        
+            <input type="submit" value="OK!">
+          </form>
+    </article>
+    <footer>Minden jog fenntartva!</footer>
+</main>
+</body>
+</html>
